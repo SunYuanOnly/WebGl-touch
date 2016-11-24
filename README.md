@@ -1,4 +1,4 @@
-#  WebGL +TOUch手势
+#  WebGL +Touch手势
 
 ## 贴图   
 
