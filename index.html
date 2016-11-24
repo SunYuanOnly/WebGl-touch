@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>event page</title>
+    <link href="dist/css/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/scale.css" type="text/css" />
+    <link href="http://ppview.vveye.com:3000/css/owl.theme.css" rel="stylesheet">
+    <script src="dist/js/jquery-1.8.3.min.js"></script>
+    <script src="dist/js/owl.carousel.js"></script>
+    <!--[if !IE]><!-->
+    <script src="dist/js/scale.js"></script>
+    <script src="dist/js/touch.min.js"></script>
+    <!--<![endif]-->
+
+    <style>
+        html, body { margin:0; padding:0;background:#5e5e5e;}
+        #owl-demo { width: 100%; margin-left:auto;margin-top:35%;margin-right: auto;}
+        #owl-demo .item{ display: block;}
+        #owl-demo img { display: block; width: 100%; border: 0 none;}
+        #bar{ width: 0%; max-width: 100%; height: 4px; overflow: hidden;}
+        #progressBar{ width: 100%;}
+    </style>
+
+</head>
+<body>
+
+<div id="container" class="container-fluid" style="background:#5e5e5e;">
+
+    <div class="mianc">
+        <!--<% if(value.status == -1){%>-->
+        <!--<div>无报警图片</div>-->
+        <!--<% }else if(value.status == 1){ %>-->
+        <!--<% for(var i = 0; i < value.picPathArr.length; i++){ %>-->
+        <!--<div id="owl-demo" class="owl-carousel" style="background:#5e5e5e;">-->
+            <!--<a class="item"><img class="event_pic" src="<%= value.picPathArr[i] %>"></a>-->
+        <!--</div>-->
+        <!--<% } %>-->
+        <!--<% } %>-->
+        <div id="owl-demo" class="owl-carousel" style="background:#5e5e5e;">
+
+            <a class="item"><img class="event_pic" src="360jpg.jpg"></a>
+
+            <a class="item"><img class="event_pic" src="test5.jpg"></a>
+
+            <a class="item"><img class="event_pic" src="test4.jpg"></a>
+        </div>
+    </div>
+
+</div>
+<div class="imgzoom_pack">
+    <div class="imgzoom_x">X</div>
+    <div class="imgzoom_img">
+        <img src="" class="image-lss"/>
+        <canvas id="canvas" style="position:relative;top:10%;!important;width: 100%;height: auto;background: #cccccc;">
+
+        </canvas>
+    </div>
+</div>
+<script type="application/javascript" src="dist/js/Manager.js"></script>
+<script src="dist/js/vertextPosition.js"></script>
+<script src="dist/js/main.js"></script>
+</body>
+</html>
